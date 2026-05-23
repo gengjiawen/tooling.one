@@ -1,6 +1,6 @@
 # Dev Tools at tooling.one
 
-https://tooling.one
+https://tooling-one.vercel.app/
 
 ## Development
 
