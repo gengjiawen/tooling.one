@@ -69,7 +69,7 @@ export default function Base64Page() {
             value={encoded}
             onChange={handleEncodedChange}
             className={clsx(
-              `w-full resize-none border rounded-md p-2 focus:outline-none focus:ring-2 focus:border-blue-500`
+              `w-full resize-none border rounded-md p-2 focus:outline-hidden focus:ring-2 focus:border-blue-500`
             )}
           ></textarea>
         </Column>

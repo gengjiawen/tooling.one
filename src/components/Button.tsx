@@ -2,8 +2,11 @@ import clsx from "clsx"
 import React from "react"
 import { copyTextToClipboard } from "../utils/copy"
 
-export const Button: React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> =
-  ({ children, className, ...props }) => {
+export const Button: React.FC<
+  React.ButtonHTMLAttributes<HTMLButtonElement> & {
+    children?: React.ReactNode
+  }
+> = ({ children, className, ...props }) => {
     return (
       <button
         {...props}

@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react"
+import type { AppProps } from "next/app"
 import "../css/tailwind.css"
-import "../css/main.css"
 
-import { SWUpdatePopup } from "~/components/SWUpdatePopup"
 import Script from "next/script"
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const [enableAnalytics, setEnableAnalytics] = useState(false)
 
   useEffect(() => {
@@ -20,7 +19,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <SWUpdatePopup />
       {enableAnalytics && (
         <Script
           strategy="afterInteractive"

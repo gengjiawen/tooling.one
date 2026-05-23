@@ -133,7 +133,7 @@ export default function TextDiffPage() {
   return (
     <Layout>
       <div className="h-screen flex flex-col">
-        <header className="h-12 border-b flex-shrink-0 flex items-center px-3 space-x-5">
+        <header className="h-12 border-b shrink-0 flex items-center px-3 space-x-5">
           <select
             value={language}
             className="bg-white p-1 border rounded-lg"

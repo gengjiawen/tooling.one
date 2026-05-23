@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "one-tooling",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "license": "GPL-3.0",
   "author": {
     "name": "EGOIST (Kevin)",
@@ -9,7 +9,7 @@
     "url": "https://egoist.sh"
   },
   "scripts": {
-    "dev": "npm run prep && next",
+    "dev": "npm run prep && next dev",
     "build": "npm run prep && next build",
     "prep": "npm run vendor-monaco",
     "vendor-monaco": "node scripts/vendor-monaco.js"
@@ -23,36 +23,33 @@
     "jsonwebtoken": "^8.5.1",
     "jws": "^4.0.0",
     "mitt": "^3.0.0",
-    "next": "^12.1.0",
-    "next-pwa": "^5.4.4",
-    "preact": "^10.5.14",
+    "next": "^16.2.6",
     "prettier": "^2.3.2",
     "qrcode": "^1.4.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "title": "^3.4.4",
     "turndown": "^7.1.1",
     "turndown-plugin-gfm": "^1.0.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
     "@types/crypto-js": "^4.1.1",
     "@types/diff": "^5.0.2",
     "@types/fs-extra": "^9.0.13",
     "@types/jsonwebtoken": "^8.5.5",
     "@types/jws": "^3.2.4",
-    "@types/node": "^16.7.10",
+    "@types/node": "^22.15.0",
     "@types/prettier": "^2.3.2",
     "@types/qrcode": "^1.4.1",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
     "@types/turndown": "^5.0.1",
     "@types/workbox-window": "^4.3.4",
-    "autoprefixer": "^10.4.0",
     "fs-extra": "^10.0.0",
     "monaco-editor": "^0.32.1",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.8",
-    "tailwindcss-animate": "^1.0.5",
-    "typescript": "^4.4.2"
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.8.3"
   }
 }

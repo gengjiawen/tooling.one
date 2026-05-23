@@ -5,7 +5,7 @@ import { tools } from "~/tools"
 export default function HomePage() {
   return (
     <Layout>
-      <div className="p-5 max-w-screen-lg">
+      <div className="p-5 max-w-(--breakpoint-lg)">
         <a
           target="_blank"
           rel="noopener nofollow"
@@ -29,7 +29,7 @@ export default function HomePage() {
             I'm keeping adding new tools to this website, you can also suggest
             ideas on{" "}
             <a
-              href="https://github.com/egoist/tooling.one/issues"
+              href="https://github.com/gengjiawen/tooling.one/issues"
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,13 +40,15 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 gap-5 p-5 max-w-screen-lg">
+      <div className="grid md:grid-cols-3 gap-5 p-5 max-w-(--breakpoint-lg)">
         {tools.map((tool) => {
           return (
-            <Link href={tool.link} key={tool.name}>
-              <a className="border rounded-lg p-5 font-bold hover:bg-zinc-100">
-                {tool.name}
-              </a>
+            <Link
+              href={tool.link}
+              key={tool.name}
+              className="border rounded-lg p-5 font-bold hover:bg-zinc-100"
+            >
+              {tool.name}
             </Link>
           )
         })}
