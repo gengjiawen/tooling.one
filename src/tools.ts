@@ -1,5 +1,9 @@
 export const tools = [
   {
+    name: "HTTP Request Tester",
+    link: "/httpbin",
+  },
+  {
     name: "Base64 Encode/Decode",
     link: "/base64",
   },
@@ -47,4 +51,4 @@ export const tools = [
     name: "Text Difference",
     link: "/text-diff",
   },
-].sort((a, b) => (a.name > b.name ? 1 : -1))
+]
